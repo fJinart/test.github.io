@@ -353,6 +353,8 @@ footer {
     /* overflow:auto; */
 }
 
+
+
 .tab_p button {
     background-color: #fff099;
     float: left;
@@ -387,6 +389,10 @@ footer {
     flex: auto;
     box-sizing: border-box;
     margin: 1.7rem 0 0 1.1rem;
+}
+
+.tabcontent.active {
+    display: block;
 }
 
 .tabcontent span {
