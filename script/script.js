@@ -105,39 +105,39 @@ function openCity(evt, cityName) {
 
 //현재 Tab 위치 기억했다가 뒤로가기 눌렀을 때 보이도록
 
-// 페이지 로드될 때 실행되는 함수
-window.onload = function() {
-  // 세션 스토리지에서 이전에 활성화되었던 탭의 정보를 가져옴
-  var activeTab = sessionStorage.getItem('activeTab');
+
+
+//Tab 위치 기억
+// 페이지가 로드될 때
+document.addEventListener('DOMContentLoaded', (event) => {
+  let activeTab = localStorage.getItem('activeTab');
   if (activeTab) {
-      // 이전에 활성화되었던 탭을 다시 활성화함
-      openCity(ev, activeTab);
+      document.getElementById(activeTab).click();
+  } else {
+      document.getElementById('tabColorTables').click();
   }
-}
+});
 
-// 탭 클릭 시 호출되는 함수
-function openCity(event, cityName) {
-  // 모든 탭 내용을 숨김
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-
-  // 모든 탭 링크의 활성화 클래스를 제거
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+function openTab(evt, tabName) {
+  // 모든 탭 콘텐츠를 숨기기
+  var tabcontent = document.getElementsByClassName('tabcontent');
+  for (var i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+      tabcontent[i].classList.remove('active');
   }
 
-  // 현재 클릭된 탭을 활성화함
-  document.getElementById(cityName).style.display = "block";
+  // 모든 탭 링크에서 active 클래스 제거
+  var tablinks = document.getElementsByClassName('tablinks');
+  for (var i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove('active');
+  }
 
-  // 클릭된 탭 버튼에 활성화 클래스를 추가
-  event.currentTarget.className += " active";
+  // 클릭된 탭과 관련된 탭 콘텐츠를 표시
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.add('active');
 
-  // 활성화된 탭의 정보를 세션 스토리지에 저장
-  sessionStorage.setItem('activeTab', cityName);
+  // 활성화된 탭을 localStorage에 저장
+  localStorage.setItem('activeTab', evt.currentTarget.id);
 }
 
 
