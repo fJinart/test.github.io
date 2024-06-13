@@ -38,16 +38,16 @@
         <div class="body_wrap">
             <div class="tabs_p">
                 <div class="tab_p">
-                    <button class="tablinks active" onclick="openCity(event, 'ColorTables')">Color Tables</button>
-                    <button class="tablinks" onclick="openCity(event, 'ColorPlates')">Color Plates</button>
-                    <button class="tablinks" onclick="openCity(event, 'SmallCrafts')">Small Crafts</button>
-                    <button class="tablinks" onclick="openCity(event, 'Legacy')">- Legacy</button>
-                    <button class="tablinks" onclick="openCity(event, 'Series')">- Series</button>
+                    <button id="tabColorTables" class="tablinks" onclick="openTab(event, 'ColorTables')">Color Tables</button>
+                    <button id="tabColorPlates" class="tablinks" onclick="openTab(event, 'ColorPlates')">Color Plates</button>
+                    <button id="tabSmallCrafts" class="tablinks" onclick="openTab(event, 'SmallCrafts')">Small Crafts</button>
+                    <button id="tabLegacy" class="tablinks" onclick="openTab(event, 'Legacy')">- Legacy</button>
+                    <button id="tabSeries"class="tablinks" onclick="openTab(event, 'Series')">- Series</button>
                 </div>
 
                 <div class="tabcontent_con">
                     <!-- ColorTables Tab -->
-                    <div id="ColorTables" class="tabcontent" style="display:block">
+                    <div id="ColorTables" class="tabcontent">
                         <span>식탁이라는 공간에 매료되어 2019년부터는 질감과 색으로 컬러 식탁을 작업하고 있습니다.
                             작가가 컬러로 정성껏 차린 Color Tables 입니다.
                             <br> 2019년에는 절제된 기하학 형상으로 색감과 질감을 담아내는 Color Tables 작업을 주로 하였고,
