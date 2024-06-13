@@ -245,3 +245,48 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Modal
+let currentIndex = 0;
+const images = document.querySelectorAll('.gallery-image');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const close = document.getElementsByClassName('close_modal')[0];
+
+function openModal(index) {
+    modal.style.display = 'block';
+    currentIndex = index;
+    showImage(currentIndex);
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+function showImage(index) {
+    if (index >= images.length) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = images.length - 1;
+    } else {
+        currentIndex = index;
+    }
+    modalImage.src = images[currentIndex].src;
+}
+
+function changeSlide(direction) {
+    showImage(currentIndex + direction);
+}
+
+images.forEach((image, index) => {
+    image.addEventListener('click', () => openModal(index));
+});
+
+close.addEventListener('click', closeModal);
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+
