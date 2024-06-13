@@ -89,25 +89,6 @@ $(document).ready(function() {
 
 
 //painting page
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-//현재 Tab 위치 기억했다가 뒤로가기 눌렀을 때 보이도록
-
-
-
-//Tab 위치 기억
 // 페이지가 로드될 때
 document.addEventListener('DOMContentLoaded', (event) => {
   let activeTab = localStorage.getItem('activeTab');
@@ -246,10 +227,54 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Modal
+// let currentIndex = 0;
+// const images = document.querySelectorAll('.gallery-image');
+// const modal = document.getElementById('modal');
+// const modalImage = document.getElementById('modalImage');
+// const close = document.getElementsByClassName('close_modal')[0];
+
+// function openModal(index) {
+//     modal.style.display = 'block';
+//     currentIndex = index;
+//     showImage(currentIndex);
+// }
+
+// function closeModal() {
+//     modal.style.display = 'none';
+// }
+
+// function showImage(index) {
+//     if (index >= images.length) {
+//         currentIndex = 0;
+//     } else if (index < 0) {
+//         currentIndex = images.length - 1;
+//     } else {
+//         currentIndex = index;
+//     }
+//     modalImage.src = images[currentIndex].src;
+// }
+
+// function changeSlide(direction) {
+//     showImage(currentIndex + direction);
+// }
+
+// images.forEach((image, index) => {
+//     image.addEventListener('click', () => openModal(index));
+// });
+
+// close.addEventListener('click', closeModal);
+
+// window.addEventListener('click', (event) => {
+//     if (event.target === modal) {
+//         closeModal();
+//     }
+// });
+
 let currentIndex = 0;
 const images = document.querySelectorAll('.gallery-image');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
+const modalTitle = document.getElementById('modalTitle');
 const close = document.getElementsByClassName('close_modal')[0];
 
 function openModal(index) {
@@ -271,6 +296,11 @@ function showImage(index) {
         currentIndex = index;
     }
     modalImage.src = images[currentIndex].src;
+    
+    // Get the title of the current image and set it to the modal title
+    const info = images[currentIndex].closest('.col').querySelector('.info');
+    const title = info.querySelector('h3').innerText;
+    modalTitle.innerText = title;
 }
 
 function changeSlide(direction) {
@@ -288,5 +318,6 @@ window.addEventListener('click', (event) => {
         closeModal();
     }
 });
+
 
 
