@@ -46,7 +46,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ColorfulWood_Blue.jpg" alt="ColorfulWood_Blue"></a>
+                                    <a href="#"><img src="images/artworks/ColorfulWood_Blue.jpg" alt="ColorfulWood_Blue" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Colorful Wood: Blue</h3>
                                         <div class="artwork_desc">
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ColorfulWood_Mint.jpg" alt="ColorfulWood_Mint"></a>
+                                    <a href="#"><img src="images/artworks/ColorfulWood_Mint.jpg" alt="ColorfulWood_Mint" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Colorful Wood: Mint</h3>
                                         <div class="artwork_desc">
@@ -68,7 +68,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ColorfulWood_Green.jpg" alt="ColorfulWood_Green"></a>
+                                    <a href="#"><img src="images/artworks/ColorfulWood_Green.jpg" alt="ColorfulWood_Green" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Colorful Wood: Green</h3>
                                         <div class="artwork_desc">
@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ColorfulWood_Pink.jpg" alt="ColorfulWood_Pink"></a>
+                                    <a href="#"><img src="images/artworks/ColorfulWood_Pink.jpg" alt="ColorfulWood_Pink" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Colorful Wood: Pink</h3>
                                         <div class="artwork_desc">
@@ -100,6 +100,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
 </body>
 
 

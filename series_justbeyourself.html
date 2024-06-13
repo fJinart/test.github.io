@@ -47,7 +47,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/DeepBreath.jpg" alt="DeepBreath"></a>
+                                    <a href="#"><img src="images/artworks/DeepBreath.jpg" alt="DeepBreath" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Deep Breath</h3>
                                         <div class="artwork_desc">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/WhoAreYou.jpg" alt="WhoAreYou"></a>
+                                    <a href="#"><img src="images/artworks/WhoAreYou.jpg" alt="WhoAreYou" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Who Are You?</h3>
                                         <div class="artwork_desc">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/WhatAreYouSeeking.jpg" alt="WhatAreYouSeeking"></a>
+                                    <a href="#"><img src="images/artworks/WhatAreYouSeeking.jpg" alt="WhatAreYouSeeking" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>What Are You Seeking?</h3>
                                         <div class="artwork_desc">
@@ -89,6 +89,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
 </body>
 
 

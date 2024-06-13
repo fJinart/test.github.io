@@ -47,7 +47,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ToYou1.jpg" alt="ToYou1"></a>
+                                    <a href="#"><img src="images/artworks/ToYou1.jpg" alt="ToYou1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>To You (Color inspired by Shepping)</h3>
                                         <div class="artwork_desc">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ToYou1_1.jpg" alt="ToYou1_1"></a>
+                                    <a href="#"><img src="images/artworks/ToYou1_1.jpg" alt="ToYou1_1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>To You (Color inspired by Shepping)</h3>
                                         <div class="artwork_desc">
@@ -69,7 +69,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ToYou2.jpg" alt="ToYou2"></a>
+                                    <a href="#"><img src="images/artworks/ToYou2.jpg" alt="ToYou2" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>To You (In the wilderness)</h3>
                                         <div class="artwork_desc">
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ToYou2_1.jpg" alt="ToYou2_1"></a>
+                                    <a href="#"><img src="images/artworks/ToYou2_1.jpg" alt="ToYou2_1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>To You (In the wilderness)</h3>
                                         <div class="artwork_desc">
@@ -101,6 +101,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+    
 </body>
 
 

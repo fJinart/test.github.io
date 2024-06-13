@@ -69,7 +69,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/His2.jpg" alt="His2"></a>
+                                    <a href="#"><img src="images/artworks/His2.jpg" alt="His2" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>His Timeline</h3>
                                         <div class="artwork_desc">
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Her2.jpg" alt="Her2"></a>
+                                    <a href="#"><img src="images/artworks/Her2.jpg" alt="Her2" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Her Timeline</h3>
                                         <div class="artwork_desc">
@@ -92,7 +92,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Moment_1.jpg" alt="Moment_1"></a>
+                                    <a href="#"><img src="images/artworks/Moment_1.jpg" alt="Moment_1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Moment 1</h3>
                                         <div class="artwork_desc">
@@ -102,7 +102,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Moment_2.jpg" alt="Moment_2"></a>
+                                    <a href="#"><img src="images/artworks/Moment_2.jpg" alt="Moment_2" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Moment 2</h3>
                                         <div class="artwork_desc">
@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Moment_3.jpg" alt="Moment_3"></a>
+                                    <a href="#"><img src="images/artworks/Moment_3.jpg" alt="Moment_3" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Moment 3</h3>
                                         <div class="artwork_desc">
@@ -125,7 +125,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Moment_4.jpg" alt="Moment_4"></a>
+                                    <a href="#"><img src="images/artworks/Moment_4.jpg" alt="Moment_4" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Moment 4</h3>
                                         <div class="artwork_desc">
@@ -135,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Moment_5.jpg" alt="Moment_5"></a>
+                                    <a href="#"><img src="images/artworks/Moment_5.jpg" alt="Moment_5" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Moment 5</h3>
                                         <div class="artwork_desc">
@@ -157,6 +157,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
 </body>
 
 

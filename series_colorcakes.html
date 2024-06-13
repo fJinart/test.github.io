@@ -47,7 +47,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/You1.jpg" alt="you1"></a>
+                                    <a href="#"><img src="images/artworks/You1.jpg" alt="you1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: U</h3>
                                         <div class="artwork_desc">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Happy1.jpg" alt="Happy1"></a>
+                                    <a href="#"><img src="images/artworks/Happy1.jpg" alt="Happy1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Happy</h3>
                                         <div class="artwork_desc">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Heart1.jpg" alt="Heart1"></a>
+                                    <a href="#"><img src="images/artworks/Heart1.jpg" alt="Heart1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Heart</h3>
                                         <div class="artwork_desc">
@@ -80,7 +80,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Trust1.jpg" alt="Trust1"></a>
+                                    <a href="#"><img src="images/artworks/Trust1.jpg" alt="Trust1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Trust</h3>
                                         <div class="artwork_desc">
@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Love1.jpg" alt="Love1"></a>
+                                    <a href="#"><img src="images/artworks/Love1.jpg" alt="Love1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Love</h3>
                                         <div class="artwork_desc">
@@ -100,7 +100,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Embrace1.jpg" alt="Embrace1"></a>
+                                    <a href="#"><img src="images/artworks/Embrace1.jpg" alt="Embrace1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Embrace</h3>
                                         <div class="artwork_desc">
@@ -113,7 +113,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Today1.jpg" alt="Today1"></a>
+                                    <a href="#"><img src="images/artworks/Today1.jpg" alt="Today1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Today</h3>
                                         <div class="artwork_desc">
@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Remeber1.jpg" alt="Remeber1"></a>
+                                    <a href="#"><img src="images/artworks/Remeber1.jpg" alt="Remeber1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Remember</h3>
                                         <div class="artwork_desc">
@@ -133,7 +133,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/Life1.jpg" alt="Life1"></a>
+                                    <a href="#"><img src="images/artworks/Life1.jpg" alt="Life1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes: Life</h3>
                                         <div class="artwork_desc">
@@ -146,7 +146,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ColorCakes.jpg" alt="ColorCakes"></a>
+                                    <a href="#"><img src="images/artworks/ColorCakes.jpg" alt="ColorCakes" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Color Cakes</h3>
                                         <div class="artwork_desc">
@@ -169,6 +169,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+     <!-- Modal structure -->
+     <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
 </body>
 
 

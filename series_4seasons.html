@@ -46,7 +46,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/4seasons_Spring.jpg" alt="4seasons_Spring"></a>
+                                    <a href="#"><img src="images/artworks/4seasons_Spring.jpg" alt="4seasons_Spring" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Spring’s Song</h3>
                                         <div class="artwork_desc">
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/4seasons_Summer.jpg" alt="4seasons_Summer"></a>
+                                    <a href="#"><img src="images/artworks/4seasons_Summer.jpg" alt="4seasons_Summer" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Summer’s Song</h3>
                                         <div class="artwork_desc">
@@ -68,7 +68,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/4seasons_Autumn.jpg" alt="4seasons_Autumn"></a>
+                                    <a href="#"><img src="images/artworks/4seasons_Autumn.jpg" alt="4seasons_Autumn" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Autumn’s Song</h3>
                                         <div class="artwork_desc">
@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/4seasons_Winter.jpg" alt="4seasons_Winter"></a>
+                                    <a href="#"><img src="images/artworks/4seasons_Winter.jpg" alt="4seasons_Winter" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Winter’s Song</h3>
                                         <div class="artwork_desc">
@@ -100,6 +100,18 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+
 </body>
 
 

@@ -47,7 +47,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/01_LightGate.jpg" alt="LightGate"></a>
+                                    <a href="#"><img src="images/artworks/01_LightGate.jpg" alt="LightGate" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Light Gate</h3>
                                         <div class="artwork_desc">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/02_DustToDust.jpg" alt="DustToDust"></a>
+                                    <a href="#"><img src="images/artworks/02_DustToDust.jpg" alt="DustToDust" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Dust To Dust</h3>
                                         <div class="artwork_desc">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/03_Upstairs.jpg" alt="Upstairs"></a>
+                                    <a href="#"><img src="images/artworks/03_Upstairs.jpg" alt="Upstairs" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Upstairs</h3>
                                         <div class="artwork_desc">
@@ -80,7 +80,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/04_FlightToHeaven.jpg" alt="FlightToHeaven"></a>
+                                    <a href="#"><img src="images/artworks/04_FlightToHeaven.jpg" alt="FlightToHeaven" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Flight To Heaven</h3>
                                         <div class="artwork_desc">
@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/05_MyHome.jpg" alt="MyHome"></a>
+                                    <a href="#"><img src="images/artworks/05_MyHome.jpg" alt="MyHome" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>My Home</h3>
                                         <div class="artwork_desc">
@@ -100,8 +100,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -114,6 +112,17 @@
             <img src="icons/Arrow_U.png" alt="Scroll to Top">
         </div>
     </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+    
 </body>
 
 

@@ -39,7 +39,7 @@
             <div class="series_title">Lydia Purple</div>
             <div class="tabs_p">
                 <div class="tabcontent_con">
-                   
+
                     <div class="tabcontent" style="display:block">
                         <span>사람들을 돕던 어느 여인의 마음을 기억하고 싶어서 작업한 연작입니다. 그녀의 이름은 "루디아"(당시 지역 이름의 별칭)로 성경의 사도행전 16장에 등장합니다.
                             보라색 직물을 팔던 여인이었는데 고대 시대에 보라색은 뿔고둥에서 극소량 추출이 되었기 때문에 보라색의 상품들은 당시 고가였습니다. 이런 배경으로 왕족이나 귀족들만
@@ -62,7 +62,7 @@
                         <div class="ct_contents">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/LargeSwatch.jpg" alt="LargeSwatch"></a>
+                                    <a href="#"><img src="images/artworks/LargeSwatch.jpg" alt="LargeSwatch" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>A Large Swatch</h3>
                                         <div class="artwork_desc">
@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/RollingPile.jpg" alt="RollingPile"></a>
+                                    <a href="#"><img src="images/artworks/RollingPile.jpg" alt="RollingPile" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>A Rolling Pile</h3>
                                         <div class="artwork_desc">
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/SmallSwatch1.jpg" alt="SmallSwatch1"></a>
+                                    <a href="#"><img src="images/artworks/SmallSwatch1.jpg" alt="SmallSwatch1" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Small Swatches: 1</h3>
                                         <div class="artwork_desc">
@@ -94,7 +94,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/SmallSwatch2.jpg" alt="SmallSwatch2"></a>
+                                    <a href="#"><img src="images/artworks/SmallSwatch2.jpg" alt="SmallSwatch2" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Small Swatches: 2</h3>
                                         <div class="artwork_desc">
@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/SmallSwatch3.jpg" alt="SmallSwatch3"></a>
+                                    <a href="#"><img src="images/artworks/SmallSwatch3.jpg" alt="SmallSwatch3" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Small Swatches: 3</h3>
                                         <div class="artwork_desc">
@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/SmallSwatch4.jpg" alt="SmallSwatch4"></a>
+                                    <a href="#"><img src="images/artworks/SmallSwatch4.jpg" alt="SmallSwatch4" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Small Swatches: 4</h3>
                                         <div class="artwork_desc">
@@ -126,7 +126,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/BluishPurple.jpg" alt="BluishPurple"></a>
+                                    <a href="#"><img src="images/artworks/BluishPurple.jpg" alt="BluishPurple" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Bluish Purple</h3>
                                         <div class="artwork_desc">
@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <a href="#"><img src="images/artworks/ReddishPurple.jpg" alt="ReddishPurple"></a>
+                                    <a href="#"><img src="images/artworks/ReddishPurple.jpg" alt="ReddishPurple" class="gallery-image"></a>
                                     <div class="info">
                                         <h3>Reddish Purple</h3>
                                         <div class="artwork_desc">
@@ -157,6 +157,18 @@
                 <img src="icons/Arrow_U.png" alt="Scroll to Top">
             </div>
         </div>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <span class="close_modal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage">
+            <a class="prev_modal" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next_modal" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
 </body>
 
 
