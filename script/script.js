@@ -226,49 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Modal
-// let currentIndex = 0;
-// const images = document.querySelectorAll('.gallery-image');
-// const modal = document.getElementById('modal');
-// const modalImage = document.getElementById('modalImage');
-// const close = document.getElementsByClassName('close_modal')[0];
-
-// function openModal(index) {
-//     modal.style.display = 'block';
-//     currentIndex = index;
-//     showImage(currentIndex);
-// }
-
-// function closeModal() {
-//     modal.style.display = 'none';
-// }
-
-// function showImage(index) {
-//     if (index >= images.length) {
-//         currentIndex = 0;
-//     } else if (index < 0) {
-//         currentIndex = images.length - 1;
-//     } else {
-//         currentIndex = index;
-//     }
-//     modalImage.src = images[currentIndex].src;
-// }
-
-// function changeSlide(direction) {
-//     showImage(currentIndex + direction);
-// }
-
-// images.forEach((image, index) => {
-//     image.addEventListener('click', () => openModal(index));
-// });
-
-// close.addEventListener('click', closeModal);
-
-// window.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//         closeModal();
-//     }
-// });
+// Modal View - Painting
 
 let currentIndex = 0;
 const images = document.querySelectorAll('.gallery-image');
@@ -316,6 +274,50 @@ close.addEventListener('click', closeModal);
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
         closeModal();
+    }
+});
+
+// Modal View - Photography
+let currentIndexPhotography = 0;
+const imagesPhotography = document.querySelectorAll('.photo-image');
+const modalPhotography = document.getElementById('modal');
+const modalImagePhotography = document.getElementById('modalImage');
+const closePhotography = document.getElementsByClassName('close_modal')[0];
+
+function openModalPhotography(index) {
+    modalPhotography.style.display = 'block';
+    currentIndexPhotography = index;
+    showImagePhotography(currentIndexPhotography);
+}
+
+function closeModalPhotography() {
+    modalPhotography.style.display = 'none';
+}
+
+function showImagePhotography(index) {
+    if (index >= imagesPhotography.length) {
+        currentIndexPhotography = 0;
+    } else if (index < 0) {
+        currentIndexPhotography = imagesPhotography.length - 1;
+    } else {
+        currentIndexPhotography = index;
+    }
+    modalImagePhotography.src = imagesPhotography[currentIndexPhotography].src;
+}
+
+function changeSlidePhotography(direction) {
+    showImagePhotography(currentIndexPhotography + direction);
+}
+
+imagesPhotography.forEach((image, index) => {
+    image.addEventListener('click', () => openModalPhotography(index));
+});
+
+closePhotography.addEventListener('click', closeModalPhotography);
+
+window.addEventListener('click', (event) => {
+    if (event.target === modalPhotography) {
+        closeModalPhotography();
     }
 });
 
