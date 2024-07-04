@@ -18,35 +18,6 @@ $(function () {
 });
 
 
-// $(function () {
-//   $('.tab>li>a').click(function () {
-//       $(this).parent().addClass("active")
-//           .siblings()
-//           .removeClass("active");
-
-//       $(this).parent().find('div').show();
-//       $(this).parent().siblings().find('div').hide();
-
-//       if ($(this).text().trim() === "KO") {
-//           $('footer').show();
-//       } else {
-//           $('footer').hide();
-//       }
-
-//       return false;
-//   });
-
-//   $('.tab>li:first-child').addClass("active");
-//   $('.tab>li:first-child').find('div').show();
-//   $('.tab>li:not(:first-child)').find('div').hide();
-
-  
-//   if ($('.tab>li:first-child>a').text().trim() === "KO") {
-//       $('footer').show();
-//   } else {
-//       $('footer').hide();
-//   }
-// });
 
 //popup menu
 
